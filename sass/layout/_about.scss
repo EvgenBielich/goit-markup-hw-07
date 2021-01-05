@@ -1,15 +1,19 @@
 .about {
   padding-top: 94px;
-}
 
-.about .container {
-  display: flex;
-  flex-direction: column;
+  &.container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .about-list {
   display: flex;
   align-items: center;
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-list-item:not(:last-child) {
@@ -25,6 +29,8 @@
   color: var(--accent-color-black);
   padding-bottom: 10px;
 }
+
+
 
 .about-list-item-text {
   font-weight: normal;
@@ -46,12 +52,14 @@
   margin-bottom: 50px;
 }
 
-.about-title-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .about-title-list {
   display: flex;
+}
+
+.about-title-list-item{
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-icon {

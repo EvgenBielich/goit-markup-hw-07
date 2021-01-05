@@ -12,6 +12,20 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color-blue);
+
+    &.clients-icon{
+      fill: var(--accent-color-blue);
+    }
+  }
+}
+
+.clients-icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon1 {
@@ -37,21 +51,6 @@
 .clients-icon6 {
   width: 88px;
   height: 45px;
-}
-
-.clients-icon {
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-list-link:hover .clients-icon,
-.clients-list-link:focus .clients-icon {
-  fill: var(--accent-color-blue);
-}
-
-.clients-list-link:hover,
-.clients-list-link:focus {
-  border: 1px solid var(--accent-color-blue);
 }
 
 .clients-title {
