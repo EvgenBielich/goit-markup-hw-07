@@ -54,7 +54,6 @@
   &-item:not(:last-child) {
     margin-right: 10px;
   }
-  
 }
 
 .social-list-link {
@@ -66,7 +65,7 @@
   border-radius: 50%;
   background-color: var(--accent-color-white);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   &:hover,
   &:focus {
     background-color: var(--accent-color-blue);
@@ -79,8 +78,8 @@
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  & .social-list-link:hover,
-    .social-list-link:focus {
+  .social-list-link:hover &,
+  .social-list-link:focus & {
     fill: var(--accent-color-white);
   }
 }

@@ -595,8 +595,8 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-icon .social-list-link:hover,
-.social-list-icon .social-list-link:focus {
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
   fill: var(--accent-color-white);
 }
 
@@ -620,7 +620,7 @@ img {
   border: 1px solid var(--accent-color-blue);
 }
 
-.clients-list-link:hover.clients-icon, .clients-list-link:focus.clients-icon {
+.clients-list-link:hover .clients-icon, .clients-list-link:focus .clients-icon {
   fill: var(--accent-color-blue);
 }
 
